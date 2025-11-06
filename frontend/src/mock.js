@@ -1,0 +1,62 @@
+export const heroImages = [
+  'https://images.unsplash.com/photo-1699210260087-347545f89de6',
+  'https://images.unsplash.com/photo-1675654871683-abf6524f68c6',
+  'https://images.unsplash.com/photo-1656497119922-068c6a5e1193'
+];
+
+export const products = [
+  {
+    id: 1,
+    name: 'Berbere',
+    description: 'A complex and aromatic blend of spices that forms the heart of Ethiopian cuisine. Rich, warm, and slightly spicy.',
+    image: 'https://images.unsplash.com/photo-1741010812421-2b5bff9f95fc',
+    featured: true
+  },
+  {
+    id: 2,
+    name: 'Mitmita',
+    description: 'A fiery spice blend with a distinctive kick. Perfect for adding bold flavor to traditional dishes and meat preparations.',
+    image: 'https://images.unsplash.com/photo-1535032756890-c4d0a4dbfd06',
+    featured: true
+  },
+  {
+    id: 3,
+    name: 'Turmeric',
+    description: 'Premium golden turmeric powder, known for its vibrant color and earthy flavor. A staple in Ethiopian cooking.',
+    image: 'https://images.unsplash.com/photo-1615485500834-bc10199bc727',
+    featured: true
+  },
+  {
+    id: 4,
+    name: 'Shiro',
+    description: 'Finely ground chickpea flour mixed with spices. The base for Ethiopia\'s beloved shiro wat stew.',
+    image: 'https://images.unsplash.com/photo-1532590766017-8572c43b007c',
+    featured: true
+  }
+];
+
+export const companyInfo = {
+  name: 'Konjo Foods',
+  tagline: 'Authentic Ethiopian Spices from Heart to Table',
+  mission: 'At Konjo Foods, we bring the authentic taste of Ethiopia to your kitchen. Our traditional spices are carefully sourced from the highlands of Ethiopia, where generations of farmers have perfected their craft. We work directly with local communities to ensure the highest quality while supporting sustainable farming practices.',
+  story: 'Founded with a passion for sharing Ethiopian culinary heritage, Konjo Foods is committed to preserving traditional methods while bringing authentic flavors to the world. Every spice blend we create follows time-honored recipes, ensuring you experience the true taste of Ethiopia in every dish.',
+  contact: {
+    email: 'michaelgetuk@gmail.com',
+    phone: '+1 (555) 123-4567',
+    address: '123 Spice Lane, Ethiopian Quarter, City, State 12345'
+  },
+  social: {
+    facebook: 'https://facebook.com',
+    instagram: 'https://instagram.com',
+    linkedin: 'https://linkedin.com'
+  }
+};
+
+export const mockContactSubmit = (formData) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log('Mock contact form submission:', formData);
+      resolve({ success: true, message: 'Message sent successfully!' });
+    }, 1000);
+  });
+};
