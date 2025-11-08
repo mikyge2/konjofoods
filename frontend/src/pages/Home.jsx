@@ -99,20 +99,20 @@ export const Home = () => {
       </section>
 
       {/* Featured Products Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-cream-bg">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-warm-brown mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-brand-black mb-4">
               Our Signature Spices
             </h2>
-            <p className="text-lg text-warm-brown/70 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Discover the authentic flavors that define Ethiopian cuisine
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {featuredProducts.map((product) => (
-              <Card key={product.id} className="border-none shadow-lg overflow-hidden group hover:shadow-2xl transition-all">
+              <Card key={product.id} className="border border-gray-200 shadow-lg overflow-hidden group hover:shadow-2xl transition-all bg-white">
                 <div className="h-64 overflow-hidden">
                   <img
                     src={product.image}
@@ -121,8 +121,8 @@ export const Home = () => {
                   />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold text-warm-brown mb-3">{product.name}</h3>
-                  <p className="text-warm-brown/70 leading-relaxed">{product.description}</p>
+                  <h3 className="text-2xl font-bold text-brand-black mb-3">{product.name}</h3>
+                  <p className="text-gray-700 leading-relaxed">{product.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -130,7 +130,7 @@ export const Home = () => {
 
           <div className="text-center mt-12">
             <Link to="/products">
-              <Button size="lg" className="bg-primary-spice hover:bg-primary-spice/90 text-white px-8 py-6 text-lg group">
+              <Button size="lg" className="bg-brand-red hover:bg-brand-dark-red text-white px-8 py-6 text-lg font-semibold group shadow-lg">
                 View All Products
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
