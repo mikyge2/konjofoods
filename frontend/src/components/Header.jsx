@@ -33,10 +33,10 @@ export const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-base font-medium transition-all hover:text-primary-spice ${
+                className={`text-base font-semibold transition-all hover:text-brand-red ${
                   isActive(link.path)
-                    ? 'text-primary-spice border-b-2 border-primary-spice'
-                    : 'text-warm-brown'
+                    ? 'text-brand-red border-b-2 border-brand-red'
+                    : 'text-brand-black'
                 }`}
               >
                 {link.name}
@@ -46,7 +46,7 @@ export const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-warm-brown hover:text-primary-spice transition-colors"
+            className="md:hidden text-brand-black hover:text-brand-red transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
