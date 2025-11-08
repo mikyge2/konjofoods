@@ -67,9 +67,9 @@ export const Footer = () => {
         </div>
 
         {/* Social Media & Copyright */}
-        <div className="mt-8 pt-8 border-t border-cream-bg/20">
+        <div className="mt-8 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-cream-bg/80 text-sm">
+            <p className="text-white/80 text-sm">
               © {currentYear} Konjo Foods. All rights reserved.
             </p>
             <div className="flex gap-6">
@@ -77,7 +77,7 @@ export const Footer = () => {
                 href={companyInfo.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cream-bg/90 hover:text-warm-gold transition-all hover:scale-110"
+                className="text-white/90 hover:text-brand-gold transition-all hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook size={20} />
@@ -86,7 +86,7 @@ export const Footer = () => {
                 href={companyInfo.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cream-bg/90 hover:text-warm-gold transition-all hover:scale-110"
+                className="text-white/90 hover:text-brand-gold transition-all hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
@@ -95,7 +95,7 @@ export const Footer = () => {
                 href={companyInfo.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cream-bg/90 hover:text-warm-gold transition-all hover:scale-110"
+                className="text-white/90 hover:text-brand-gold transition-all hover:scale-110"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
