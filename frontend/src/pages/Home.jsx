@@ -53,43 +53,43 @@ export const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-cream-bg">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-warm-brown text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-brand-black text-center mb-16">
             Why Choose Konjo Foods?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border-none shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
+            <Card className="border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-primary-spice/10 rounded-full flex items-center justify-center">
-                  <Sparkles className="text-primary-spice" size={32} />
+                <div className="w-16 h-16 mx-auto mb-6 bg-brand-red/10 rounded-full flex items-center justify-center">
+                  <Sparkles className="text-brand-red" size={32} />
                 </div>
-                <h3 className="text-2xl font-bold text-warm-brown mb-4">Authentic Quality</h3>
-                <p className="text-warm-brown/80 leading-relaxed">
+                <h3 className="text-2xl font-bold text-brand-black mb-4">Authentic Quality</h3>
+                <p className="text-gray-700 leading-relaxed">
                   Sourced directly from Ethiopian highlands, our spices maintain their authentic flavor and aroma.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
+            <Card className="border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-primary-spice/10 rounded-full flex items-center justify-center">
-                  <Heart className="text-primary-spice" size={32} />
+                <div className="w-16 h-16 mx-auto mb-6 bg-brand-red/10 rounded-full flex items-center justify-center">
+                  <Heart className="text-brand-red" size={32} />
                 </div>
-                <h3 className="text-2xl font-bold text-warm-brown mb-4">Traditional Methods</h3>
-                <p className="text-warm-brown/80 leading-relaxed">
+                <h3 className="text-2xl font-bold text-brand-black mb-4">Traditional Methods</h3>
+                <p className="text-gray-700 leading-relaxed">
                   We follow time-honored recipes and preparation methods passed down through generations.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
+            <Card className="border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-primary-spice/10 rounded-full flex items-center justify-center">
-                  <Award className="text-primary-spice" size={32} />
+                <div className="w-16 h-16 mx-auto mb-6 bg-brand-red/10 rounded-full flex items-center justify-center">
+                  <Award className="text-brand-red" size={32} />
                 </div>
-                <h3 className="text-2xl font-bold text-warm-brown mb-4">Community Support</h3>
-                <p className="text-warm-brown/80 leading-relaxed">
+                <h3 className="text-2xl font-bold text-brand-black mb-4">Community Support</h3>
+                <p className="text-gray-700 leading-relaxed">
                   We work directly with local farmers, ensuring fair practices and sustainable farming.
                 </p>
               </CardContent>
