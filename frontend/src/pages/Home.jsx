@@ -140,16 +140,16 @@ export const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-spice to-warm-orange text-white">
+      <section className="py-20 bg-gradient-to-r from-brand-red to-brand-dark-red text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
             Ready to Experience Authentic Ethiopian Flavors?
           </h2>
-          <p className="text-xl mb-8 text-white/90">
+          <p className="text-xl mb-8 text-white/95 drop-shadow-md">
             Get in touch with us to learn more about our products and sourcing practices.
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-white text-primary-spice hover:bg-cream-bg px-8 py-6 text-lg font-semibold">
+            <Button size="lg" className="bg-white text-brand-red hover:bg-cream-bg hover:text-brand-black px-8 py-6 text-lg font-semibold shadow-xl">
               Contact Us Today
             </Button>
           </Link>
