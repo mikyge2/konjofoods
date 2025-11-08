@@ -68,143 +68,19 @@ export const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-4xl font-bold text-warm-brown mb-8">Get In Touch</h2>
-              <p className="text-lg text-warm-brown/70 mb-8 leading-relaxed">
+              <h2 className="text-4xl font-bold text-brand-black mb-8">Get In Touch</h2>
+              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Have questions about our products or want to learn more about our sourcing practices? We're here to help!
               </p>
 
               <div className="space-y-6">
-                <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
+                <Card className="border border-gray-200 shadow-md hover:shadow-lg transition-shadow bg-white">
                   <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary-spice/10 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Mail className="text-primary-spice" size={24} />
+                    <div className="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Mail className="text-brand-red" size={24} />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-warm-brown mb-1">Email</h3>
-                      <a
-                        href={`mailto:${companyInfo.contact.email}`}
-                        className="text-warm-brown/70 hover:text-primary-spice transition-colors"
-                      >
-                        {companyInfo.contact.email}
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary-spice/10 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Phone className="text-primary-spice" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-warm-brown mb-1">Phone</h3>
-                      <a
-                        href={`tel:${companyInfo.contact.phone}`}
-                        className="text-warm-brown/70 hover:text-primary-spice transition-colors"
-                      >
-                        {companyInfo.contact.phone}
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary-spice/10 rounded-full flex items-center justify-center flex-shrink-0">
-                      <MapPin className="text-primary-spice" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-warm-brown mb-1">Address</h3>
-                      <p className="text-warm-brown/70">{companyInfo.contact.address}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div>
-              <Card className="border-none shadow-xl">
-                <CardContent className="p-8">
-                  <h2 className="text-3xl font-bold text-warm-brown mb-6">Send Us a Message</h2>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
-                      <Label htmlFor="name" className="text-warm-brown font-medium mb-2 block">
-                        Full Name *
-                      </Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="border-warm-brown/20 focus:border-primary-spice"
-                        placeholder="John Doe"
-                      />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="email" className="text-warm-brown font-medium mb-2 block">
-                        Email Address *
-                      </Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="border-warm-brown/20 focus:border-primary-spice"
-                        placeholder="john@example.com"
-                      />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="phone" className="text-warm-brown font-medium mb-2 block">
-                        Phone Number
-                      </Label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="border-warm-brown/20 focus:border-primary-spice"
-                        placeholder="+1 (555) 123-4567"
-                      />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="message" className="text-warm-brown font-medium mb-2 block">
-                        Message *
-                      </Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        required
-                        value={formData.message}
-                        onChange={handleChange}
-                        className="border-warm-brown/20 focus:border-primary-spice min-h-32"
-                        placeholder="Tell us how we can help you..."
-                      />
-                    </div>
-
-                    <Button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-primary-spice hover:bg-primary-spice/90 text-white py-6 text-lg font-semibold group"
-                    >
-                      {isSubmitting ? 'Sending...' : 'Send Message'}
-                      <Send className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
+                      <h3 className="text-lg font-semibold text-brand-black mb-1">Email</h3>\n                      <a\n                        href={`mailto:${companyInfo.contact.email}`}\n                        className="text-gray-700 hover:text-brand-red transition-colors"\n                      >\n                        {companyInfo.contact.email}\n                      </a>\n                    </div>\n                  </CardContent>\n                </Card>\n\n                <Card className="border border-gray-200 shadow-md hover:shadow-lg transition-shadow bg-white">\n                  <CardContent className="p-6 flex items-start gap-4">\n                    <div className="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center flex-shrink-0">\n                      <Phone className="text-brand-red" size={24} />\n                    </div>\n                    <div>\n                      <h3 className="text-lg font-semibold text-brand-black mb-1">Phone</h3>\n                      <a\n                        href={`tel:${companyInfo.contact.phone}`}\n                        className="text-gray-700 hover:text-brand-red transition-colors"\n                      >\n                        {companyInfo.contact.phone}\n                      </a>\n                    </div>\n                  </CardContent>\n                </Card>\n\n                <Card className="border border-gray-200 shadow-md hover:shadow-lg transition-shadow bg-white">\n                  <CardContent className="p-6 flex items-start gap-4">\n                    <div className="w-12 h-12 bg-brand-red/10 rounded-full flex items-center justify-center flex-shrink-0">\n                      <MapPin className="text-brand-red" size={24} />\n                    </div>\n                    <div>\n                      <h3 className="text-lg font-semibold text-brand-black mb-1">Address</h3>\n                      <p className="text-gray-700">{companyInfo.contact.address}</p>\n                    </div>\n                  </CardContent>\n                </Card>\n              </div>\n            </div>\n\n            {/* Contact Form */}\n            <div>\n              <Card className="border border-gray-200 shadow-xl bg-white">\n                <CardContent className="p-8">\n                  <h2 className="text-3xl font-bold text-brand-black mb-6">Send Us a Message</h2>\n                  <form onSubmit={handleSubmit} className="space-y-6">\n                    <div>\n                      <Label htmlFor="name" className="text-brand-black font-semibold mb-2 block">\n                        Full Name *\n                      </Label>\n                      <Input\n                        id="name"\n                        name="name"\n                        type="text"\n                        required\n                        value={formData.name}\n                        onChange={handleChange}\n                        className="border-gray-300 focus:border-brand-red focus:ring-brand-red"\n                        placeholder="John Doe"\n                      />\n                    </div>\n\n                    <div>\n                      <Label htmlFor="email" className="text-brand-black font-semibold mb-2 block">\n                        Email Address *\n                      </Label>\n                      <Input\n                        id="email"\n                        name="email"\n                        type="email"\n                        required\n                        value={formData.email}\n                        onChange={handleChange}\n                        className="border-gray-300 focus:border-brand-red focus:ring-brand-red"\n                        placeholder="john@example.com"\n                      />\n                    </div>\n\n                    <div>\n                      <Label htmlFor="phone" className="text-brand-black font-semibold mb-2 block">\n                        Phone Number\n                      </Label>\n                      <Input\n                        id="phone"\n                        name="phone"\n                        type="tel"\n                        value={formData.phone}\n                        onChange={handleChange}\n                        className="border-gray-300 focus:border-brand-red focus:ring-brand-red"\n                        placeholder="+1 (555) 123-4567"\n                      />\n                    </div>\n\n                    <div>\n                      <Label htmlFor="message" className="text-brand-black font-semibold mb-2 block">\n                        Message *\n                      </Label>\n                      <Textarea\n                        id="message"\n                        name="message"\n                        required\n                        value={formData.message}\n                        onChange={handleChange}\n                        className="border-gray-300 focus:border-brand-red focus:ring-brand-red min-h-32"\n                        placeholder="Tell us how we can help you..."\n                      />\n                    </div>\n\n                    <Button\n                      type="submit"\n                      disabled={isSubmitting}\n                      className="w-full bg-brand-red hover:bg-brand-dark-red text-white py-6 text-lg font-semibold group shadow-lg"\n                    >\n                      {isSubmitting ? 'Sending...' : 'Send Message'}\n                      <Send className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />\n                    </Button>\n                  </form>\n                </CardContent>\n              </Card>\n            </div>\n          </div>\n        </div>\n      </section>
     </div>
   );
 };
