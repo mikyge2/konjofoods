@@ -13,6 +13,11 @@ module.exports = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+  			'brand-red': 'var(--brand-red)',
+  			'brand-white': 'var(--brand-white)',
+  			'brand-dark-red': 'var(--brand-dark-red)',
+  			'brand-black': 'var(--brand-black)',
+  			'brand-gold': 'var(--brand-gold)',
   			'primary-spice': 'var(--primary-spice)',
   			'warm-brown': 'var(--warm-brown)',
   			'warm-orange': 'var(--warm-orange)',
