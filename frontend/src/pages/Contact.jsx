@@ -53,10 +53,10 @@ export const Contact = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-warm-brown to-warm-orange text-white">
+      <section className="relative py-20 bg-gradient-to-r from-brand-red to-brand-dark-red text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl text-white/90">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">Contact Us</h1>
+          <p className="text-xl text-white/95 drop-shadow-md">
             We'd love to hear from you. Get in touch with us today!
           </p>
         </div>
