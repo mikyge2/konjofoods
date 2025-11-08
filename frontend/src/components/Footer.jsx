@@ -6,13 +6,17 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-warm-brown text-cream-bg">
+    <footer className="bg-brand-black text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-warm-gold mb-4">Konjo Foods</h3>
-            <p className="text-cream-bg/90 mb-4">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_ethiopian-flavors/artifacts/4gg21dsu_KonjoFoodsLogo.jpg" 
+              alt="Konjo Foods Logo" 
+              className="h-20 w-auto mb-4"
+            />
+            <p className="text-white/90 mb-4">
               Authentic Ethiopian spices bringing traditional flavors to your kitchen.
             </p>
           </div>
