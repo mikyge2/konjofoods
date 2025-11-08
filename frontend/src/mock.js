@@ -14,23 +14,44 @@ export const products = [
   },
   {
     id: 2,
-    name: 'Mitmita',
+    name: 'Shiro',
+    description: 'Finely ground chickpea flour mixed with spices. The base for Ethiopia\'s beloved shiro wat stew.',
+    image: 'https://images.unsplash.com/photo-1532590766017-8572c43b007c',
+    featured: true
+  },
+  {
+    id: 3,
+    name: 'Chili Powder (Mitmita)',
     description: 'A fiery spice blend with a distinctive kick. Perfect for adding bold flavor to traditional dishes and meat preparations.',
     image: 'https://images.unsplash.com/photo-1535032756890-c4d0a4dbfd06',
     featured: true
   },
   {
-    id: 3,
-    name: 'Turmeric',
-    description: 'Premium golden turmeric powder, known for its vibrant color and earthy flavor. A staple in Ethiopian cooking.',
+    id: 4,
+    name: 'Powder Roasted Barley (Beso)',
+    description: 'Traditional roasted barley powder, a nutritious and flavorful ingredient used in Ethiopian beverages and dishes.',
     image: 'https://images.unsplash.com/photo-1615485500834-bc10199bc727',
     featured: true
   },
   {
-    id: 4,
-    name: 'Shiro',
-    description: 'Finely ground chickpea flour mixed with spices. The base for Ethiopia\'s beloved shiro wat stew.',
-    image: 'https://images.unsplash.com/photo-1532590766017-8572c43b007c',
+    id: 5,
+    name: 'Porridge',
+    description: 'Premium quality porridge blend, perfect for a wholesome and traditional Ethiopian breakfast.',
+    image: 'https://images.unsplash.com/photo-1699210260087-347545f89de6',
+    featured: true
+  },
+  {
+    id: 6,
+    name: 'Bula',
+    description: 'A traditional Ethiopian flour blend made from roasted grains, rich in nutrients and authentic flavor.',
+    image: 'https://images.unsplash.com/photo-1675654871683-abf6524f68c6',
+    featured: true
+  },
+  {
+    id: 7,
+    name: 'Powder Emmer Wheat',
+    description: 'Ancient grain flour with a nutty flavor and exceptional nutritional value, ideal for traditional Ethiopian baking.',
+    image: 'https://images.unsplash.com/photo-1656497119922-068c6a5e1193',
     featured: true
   }
 ];
