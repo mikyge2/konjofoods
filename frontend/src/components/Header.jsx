@@ -16,11 +16,15 @@ export const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-amber-100">
-      <nav className="max-w-7xl mx-auto px-6 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <nav className="max-w-7xl mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-bold text-primary-spice transition-transform hover:scale-105">
-            Konjo Foods
+          <Link to="/" className="transition-transform hover:scale-105">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_ethiopian-flavors/artifacts/4gg21dsu_KonjoFoodsLogo.jpg" 
+              alt="Konjo Foods Logo" 
+              className="h-16 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
