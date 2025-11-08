@@ -56,16 +56,16 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-amber-100 pt-4">
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block py-2 text-base font-medium transition-colors ${
+                className={`block py-2 text-base font-semibold transition-colors ${
                   isActive(link.path)
-                    ? 'text-primary-spice font-semibold'
-                    : 'text-warm-brown hover:text-primary-spice'
+                    ? 'text-brand-red'
+                    : 'text-brand-black hover:text-brand-red'
                 }`}
               >
                 {link.name}
