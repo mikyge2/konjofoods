@@ -23,18 +23,18 @@ export const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-warm-gold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-brand-gold mb-4">Quick Links</h4>
             <div className="space-y-2">
-              <Link to="/" className="block text-cream-bg/90 hover:text-warm-gold transition-colors">
+              <Link to="/" className="block text-white/90 hover:text-brand-gold transition-colors">
                 Home
               </Link>
-              <Link to="/about" className="block text-cream-bg/90 hover:text-warm-gold transition-colors">
+              <Link to="/about" className="block text-white/90 hover:text-brand-gold transition-colors">
                 About Us
               </Link>
-              <Link to="/products" className="block text-cream-bg/90 hover:text-warm-gold transition-colors">
+              <Link to="/products" className="block text-white/90 hover:text-brand-gold transition-colors">
                 Products
               </Link>
-              <Link to="/contact" className="block text-cream-bg/90 hover:text-warm-gold transition-colors">
+              <Link to="/contact" className="block text-white/90 hover:text-brand-gold transition-colors">
                 Contact
               </Link>
             </div>
@@ -42,23 +42,23 @@ export const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-warm-gold mb-4">Contact Us</h4>
+            <h4 className="text-lg font-semibold text-brand-gold mb-4">Contact Us</h4>
             <div className="space-y-3">
               <a
                 href={`mailto:${companyInfo.contact.email}`}
-                className="flex items-center gap-2 text-cream-bg/90 hover:text-warm-gold transition-colors"
+                className="flex items-center gap-2 text-white/90 hover:text-brand-gold transition-colors"
               >
                 <Mail size={18} />
                 <span>{companyInfo.contact.email}</span>
               </a>
               <a
                 href={`tel:${companyInfo.contact.phone}`}
-                className="flex items-center gap-2 text-cream-bg/90 hover:text-warm-gold transition-colors"
+                className="flex items-center gap-2 text-white/90 hover:text-brand-gold transition-colors"
               >
                 <Phone size={18} />
                 <span>{companyInfo.contact.phone}</span>
               </a>
-              <div className="flex items-start gap-2 text-cream-bg/90">
+              <div className="flex items-start gap-2 text-white/90">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />
                 <span>{companyInfo.contact.address}</span>
               </div>
