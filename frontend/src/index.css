@@ -19,37 +19,44 @@ code {
 
 @layer base {
     :root {
-        /* Ethiopian spice-inspired color palette */
-        --primary-spice: #d2691e; /* Rich brown-orange */
-        --warm-brown: #5d4037; /* Deep warm brown */
-        --warm-orange: #f57c00; /* Vibrant orange */
-        --warm-gold: #ffd700; /* Golden yellow */
+        /* Konjo Foods Brand Colors */
+        --brand-red: #f80000; /* Primary Red */
+        --brand-white: #ffffff; /* White */
+        --brand-dark-red: #b00616; /* Dark Red */
+        --brand-black: #171715; /* Black */
+        --brand-gold: #e7ae3b; /* Gold */
         --cream-bg: #f7f5f2; /* Off-white cream */
+        
+        /* Legacy color names for backward compatibility */
+        --primary-spice: #f80000;
+        --warm-brown: #171715;
+        --warm-orange: #b00616;
+        --warm-gold: #e7ae3b;
         
         /* Shadcn base variables */
         --background: 0 0% 100%;
-        --foreground: 28 28% 25%;
+        --foreground: 0 2% 9%;
         --card: 0 0% 100%;
-        --card-foreground: 28 28% 25%;
+        --card-foreground: 0 2% 9%;
         --popover: 0 0% 100%;
-        --popover-foreground: 28 28% 25%;
-        --primary: 25 68% 47%;
-        --primary-foreground: 0 0% 98%;
-        --secondary: 35 25% 85%;
-        --secondary-foreground: 28 28% 25%;
+        --popover-foreground: 0 2% 9%;
+        --primary: 0 100% 49%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 44 73% 56%;
+        --secondary-foreground: 0 2% 9%;
         --muted: 35 25% 85%;
-        --muted-foreground: 28 10% 50%;
-        --accent: 35 25% 85%;
-        --accent-foreground: 28 28% 25%;
+        --muted-foreground: 0 10% 40%;
+        --accent: 0 79% 35%;
+        --accent-foreground: 0 0% 100%;
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 0 0% 98%;
-        --border: 28 20% 88%;
-        --input: 28 20% 88%;
-        --ring: 25 68% 47%;
-        --chart-1: 25 68% 47%;
-        --chart-2: 35 100% 50%;
-        --chart-3: 45 100% 51%;
-        --chart-4: 28 28% 25%;
+        --border: 0 10% 85%;
+        --input: 0 10% 85%;
+        --ring: 0 100% 49%;
+        --chart-1: 0 100% 49%;
+        --chart-2: 0 79% 35%;
+        --chart-3: 44 73% 56%;
+        --chart-4: 0 2% 9%;
         --chart-5: 35 25% 85%;
         --radius: 0.5rem;
     }
