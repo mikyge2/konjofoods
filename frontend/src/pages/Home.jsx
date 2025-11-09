@@ -141,16 +141,16 @@ export const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-brand-red to-brand-dark-red text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-brand-red to-brand-dark-red text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 drop-shadow-lg px-4">
             Ready to Experience Authentic Ethiopian Flavors?
           </h2>
-          <p className="text-xl mb-8 text-white/95 drop-shadow-md">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/95 drop-shadow-md px-4 max-w-2xl mx-auto">
             Get in touch with us to learn more about our products and sourcing practices.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="bg-white text-brand-red hover:bg-cream-bg hover:text-brand-black px-8 py-6 text-lg font-semibold shadow-xl">
+          <Link to="/contact" className="inline-block w-full sm:w-auto px-4">
+            <Button size="lg" className="w-full sm:w-auto bg-white text-brand-red hover:bg-cream-bg hover:text-brand-black px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all">
               Contact Us Today
             </Button>
           </Link>
