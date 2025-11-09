@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Dark Overlay for Readability */}
         <div
           className="absolute inset-0 z-0"
@@ -20,30 +20,30 @@ export const Home = () => {
             backgroundPosition: 'center'
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-black/85 via-brand-black/70 to-brand-black/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-black/90 via-brand-black/75 to-brand-black/60"></div>
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center md:text-left">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in drop-shadow-lg">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center md:text-left">
+          <div className="max-w-3xl mx-auto md:mx-0">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 animate-fade-in drop-shadow-2xl">
               Konjo Foods
             </h1>
-            <p className="text-2xl md:text-3xl text-brand-gold mb-8 font-semibold drop-shadow-md">
+            <p className="text-xl sm:text-2xl md:text-3xl text-brand-gold mb-6 md:mb-8 font-semibold drop-shadow-lg">
               Authentic Ethiopian Spices from Heart to Table
             </p>
-            <p className="text-lg md:text-xl text-white/95 mb-10 leading-relaxed drop-shadow-md">
+            <p className="text-base sm:text-lg md:text-xl text-white/95 mb-8 md:mb-10 leading-relaxed drop-shadow-lg max-w-2xl">
               Experience the rich heritage of Ethiopian cuisine with our carefully sourced, traditional spice blends.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/products">
-                <Button size="lg" className="bg-brand-red hover:bg-brand-dark-red text-white px-8 py-6 text-lg font-semibold group shadow-lg">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
+              <Link to="/products" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto bg-brand-red hover:bg-brand-dark-red text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold group shadow-xl hover:shadow-2xl transition-all">
                   Explore Our Spices
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                 </Button>
               </Link>
-              <Link to="/about">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-brand-black px-8 py-6 text-lg font-semibold shadow-lg">
+              <Link to="/about" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-brand-black px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all">
                   Our Story
                 </Button>
               </Link>
