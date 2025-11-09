@@ -99,38 +99,39 @@ export const Home = () => {
       </section>
 
       {/* Featured Products Section */}
-      <section className="py-20 bg-cream-bg">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-brand-black mb-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-cream-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-black mb-3 sm:mb-4">
               Our Signature Spices
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-700 max-w-2xl mx-auto px-4">
               Discover the authentic flavors that define Ethiopian cuisine
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {featuredProducts.map((product) => (
-              <Card key={product.id} className="border border-gray-200 shadow-lg overflow-hidden group hover:shadow-2xl transition-all bg-white">
-                <div className="h-64 overflow-hidden">
+              <Card key={product.id} className="border border-gray-200 shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white">
+                <div className="h-56 sm:h-64 overflow-hidden bg-gray-100">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold text-brand-black mb-3">{product.name}</h3>
-                  <p className="text-gray-700 leading-relaxed">{product.description}</p>
+                <CardContent className="p-5 sm:p-6">
+                  <h3 className="text-xl sm:text-2xl font-bold text-brand-black mb-2 sm:mb-3">{product.name}</h3>
+                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{product.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-10 sm:mt-12 px-4">
             <Link to="/products">
-              <Button size="lg" className="bg-brand-red hover:bg-brand-dark-red text-white px-8 py-6 text-lg font-semibold group shadow-lg">
+              <Button size="lg" className="w-full sm:w-auto bg-brand-red hover:bg-brand-dark-red text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold group shadow-lg hover:shadow-xl transition-all">
                 View All Products
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
