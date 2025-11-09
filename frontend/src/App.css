@@ -3,6 +3,22 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Performance optimizations */
+img {
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+/* Lazy loading for images */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+
 /* Fade-in animation */
 @keyframes fade-in {
     from {
@@ -24,12 +40,31 @@ button, a {
     transition: all 0.3s ease;
 }
 
-/* Image hover effects */
-img {
-    transition: transform 0.5s ease;
-}
-
 /* Ensure no text-align center globally */
 .App {
     text-align: left;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    h2 {
+        font-size: 2rem !important;
+    }
+    
+    p {
+        font-size: 1rem !important;
+    }
+}
+
+/* Performance: GPU acceleration for transforms */
+.hover\:scale-105:hover,
+.hover\:-translate-y-1:hover,
+.hover\:-translate-y-2:hover,
+.hover\:scale-110:hover {
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
