@@ -53,43 +53,43 @@ export const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-black text-center mb-16">
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-black text-center mb-10 sm:mb-12 md:mb-16">
             Why Choose Konjo Foods?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-brand-red/10 rounded-full flex items-center justify-center">
-                  <Sparkles className="text-brand-red" size={32} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <Card className="border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white">
+              <CardContent className="p-6 sm:p-8 text-center">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 bg-brand-red/10 rounded-full flex items-center justify-center">
+                  <Sparkles className="text-brand-red" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-brand-black mb-4">Authentic Quality</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold text-brand-black mb-3 sm:mb-4">Authentic Quality</h3>
+                <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                   Sourced directly from Ethiopian highlands, our spices maintain their authentic flavor and aroma.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-brand-red/10 rounded-full flex items-center justify-center">
-                  <Heart className="text-brand-red" size={32} />
+            <Card className="border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white">
+              <CardContent className="p-6 sm:p-8 text-center">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 bg-brand-red/10 rounded-full flex items-center justify-center">
+                  <Heart className="text-brand-red" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-brand-black mb-4">Traditional Methods</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold text-brand-black mb-3 sm:mb-4">Traditional Methods</h3>
+                <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                   We follow time-honored recipes and preparation methods passed down through generations.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border border-gray-200 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-brand-red/10 rounded-full flex items-center justify-center">
-                  <Award className="text-brand-red" size={32} />
+            <Card className="border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white sm:col-span-2 lg:col-span-1">
+              <CardContent className="p-6 sm:p-8 text-center">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 bg-brand-red/10 rounded-full flex items-center justify-center">
+                  <Award className="text-brand-red" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-brand-black mb-4">Community Support</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold text-brand-black mb-3 sm:mb-4">Community Support</h3>
+                <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                   We work directly with local farmers, ensuring fair practices and sustainable farming.
                 </p>
               </CardContent>
