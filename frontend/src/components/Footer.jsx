@@ -7,16 +7,17 @@ export const Footer = () => {
 
   return (
     <footer className="bg-brand-black text-white">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {/* Company Info */}
-          <div>
+          <div className="text-center sm:text-left">
             <img 
               src="https://customer-assets.emergentagent.com/job_ethiopian-flavors/artifacts/4gg21dsu_KonjoFoodsLogo.jpg" 
               alt="Konjo Foods Logo" 
-              className="h-20 w-auto mb-4"
+              className="h-16 sm:h-18 md:h-20 w-auto mb-3 sm:mb-4 mx-auto sm:mx-0"
+              loading="lazy"
             />
-            <p className="text-white/90 mb-4">
+            <p className="text-white/90 mb-3 sm:mb-4 text-sm sm:text-base">
               Authentic Ethiopian spices bringing traditional flavors to your kitchen.
             </p>
           </div>
