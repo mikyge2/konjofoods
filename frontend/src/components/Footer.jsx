@@ -23,45 +23,45 @@ export const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold text-brand-gold mb-4">Quick Links</h4>
-            <div className="space-y-2">
-              <Link to="/" className="block text-white/90 hover:text-brand-gold transition-colors">
+          <div className="text-center sm:text-left">
+            <h4 className="text-base sm:text-lg font-semibold text-brand-gold mb-3 sm:mb-4">Quick Links</h4>
+            <div className="space-y-1.5 sm:space-y-2">
+              <Link to="/" className="block text-white/90 hover:text-brand-gold transition-colors text-sm sm:text-base">
                 Home
               </Link>
-              <Link to="/about" className="block text-white/90 hover:text-brand-gold transition-colors">
+              <Link to="/about" className="block text-white/90 hover:text-brand-gold transition-colors text-sm sm:text-base">
                 About Us
               </Link>
-              <Link to="/products" className="block text-white/90 hover:text-brand-gold transition-colors">
+              <Link to="/products" className="block text-white/90 hover:text-brand-gold transition-colors text-sm sm:text-base">
                 Products
               </Link>
-              <Link to="/contact" className="block text-white/90 hover:text-brand-gold transition-colors">
+              <Link to="/contact" className="block text-white/90 hover:text-brand-gold transition-colors text-sm sm:text-base">
                 Contact
               </Link>
             </div>
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-semibold text-brand-gold mb-4">Contact Us</h4>
-            <div className="space-y-3">
+          <div className="text-center sm:text-left">
+            <h4 className="text-base sm:text-lg font-semibold text-brand-gold mb-3 sm:mb-4">Contact Us</h4>
+            <div className="space-y-2 sm:space-y-3">
               <a
                 href={`mailto:${companyInfo.contact.email}`}
-                className="flex items-center gap-2 text-white/90 hover:text-brand-gold transition-colors"
+                className="flex items-center gap-2 text-white/90 hover:text-brand-gold transition-colors justify-center sm:justify-start text-sm sm:text-base"
               >
-                <Mail size={18} />
-                <span>{companyInfo.contact.email}</span>
+                <Mail size={16} className="flex-shrink-0" />
+                <span className="break-all">{companyInfo.contact.email}</span>
               </a>
               <a
                 href={`tel:${companyInfo.contact.phone}`}
-                className="flex items-center gap-2 text-white/90 hover:text-brand-gold transition-colors"
+                className="flex items-center gap-2 text-white/90 hover:text-brand-gold transition-colors justify-center sm:justify-start text-sm sm:text-base"
               >
-                <Phone size={18} />
+                <Phone size={16} className="flex-shrink-0" />
                 <span>{companyInfo.contact.phone}</span>
               </a>
-              <div className="flex items-start gap-2 text-white/90">
-                <MapPin size={18} className="mt-1 flex-shrink-0" />
-                <span>{companyInfo.contact.address}</span>
+              <div className="flex items-start gap-2 text-white/90 justify-center sm:justify-start text-sm sm:text-base">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <span className="text-left">{companyInfo.contact.address}</span>
               </div>
             </div>
           </div>
