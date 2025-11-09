@@ -9,7 +9,7 @@ export const products = [
     id: 1,
     name: 'Berbere',
     description: 'A complex and aromatic blend of spices that forms the heart of Ethiopian cuisine. Rich, warm, and slightly spicy.',
-    image: 'https://images.unsplash.com/photo-1741010812421-2b5bff9f95fc',
+    image: 'https://images.unsplash.com/photo-1577563717655-919fc57789b4',
     featured: true
   },
   {
@@ -23,35 +23,35 @@ export const products = [
     id: 3,
     name: 'Chili Powder (Mitmita)',
     description: 'A fiery spice blend with a distinctive kick. Perfect for adding bold flavor to traditional dishes and meat preparations.',
-    image: 'https://images.unsplash.com/photo-1535032756890-c4d0a4dbfd06',
+    image: 'https://images.unsplash.com/photo-1650559347569-09a6bbed5f28',
     featured: true
   },
   {
     id: 4,
     name: 'Powder Roasted Barley (Beso)',
     description: 'Traditional roasted barley powder, a nutritious and flavorful ingredient used in Ethiopian beverages and dishes.',
-    image: 'https://images.unsplash.com/photo-1615485500834-bc10199bc727',
+    image: 'https://images.unsplash.com/photo-1704650312022-ed1a76dbed1b',
     featured: true
   },
   {
     id: 5,
     name: 'Porridge',
     description: 'Premium quality porridge blend, perfect for a wholesome and traditional Ethiopian breakfast.',
-    image: 'https://images.unsplash.com/photo-1699210260087-347545f89de6',
+    image: 'https://images.unsplash.com/photo-1501432781167-c0ccfd492297',
     featured: true
   },
   {
     id: 6,
     name: 'Bula',
     description: 'A traditional Ethiopian flour blend made from roasted grains, rich in nutrients and authentic flavor.',
-    image: 'https://images.unsplash.com/photo-1675654871683-abf6524f68c6',
+    image: 'https://images.unsplash.com/photo-1627735483792-233bf632619b',
     featured: true
   },
   {
     id: 7,
     name: 'Powder Emmer Wheat',
     description: 'Ancient grain flour with a nutty flavor and exceptional nutritional value, ideal for traditional Ethiopian baking.',
-    image: 'https://images.unsplash.com/photo-1656497119922-068c6a5e1193',
+    image: 'https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f',
     featured: true
   }
 ];
