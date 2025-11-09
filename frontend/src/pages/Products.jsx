@@ -17,27 +17,28 @@ export const Products = () => {
       </section>
 
       {/* Products Grid */}
-      <section className="py-20 bg-cream-bg">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <section className="py-12 sm:py-16 md:py-20 bg-cream-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {products.map((product) => (
-              <Card key={product.id} className="border border-gray-200 shadow-xl overflow-hidden group hover:shadow-2xl transition-all hover:-translate-y-2 bg-white">
-                <div className="h-72 overflow-hidden relative">
+              <Card key={product.id} className="border border-gray-200 shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white">
+                <div className="h-60 sm:h-72 overflow-hidden relative bg-gray-100">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   {product.featured && (
-                    <Badge className="absolute top-4 right-4 bg-brand-gold text-brand-black border-none px-4 py-2 shadow-lg">
-                      <Sparkles size={16} className="mr-1" />
+                    <Badge className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-brand-gold text-brand-black border-none px-3 py-1.5 sm:px-4 sm:py-2 shadow-lg text-xs sm:text-sm">
+                      <Sparkles size={14} className="mr-1" />
                       Featured
                     </Badge>
                   )}
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold text-brand-black mb-3">{product.name}</h3>
-                  <p className="text-gray-700 leading-relaxed">{product.description}</p>
+                <CardContent className="p-5 sm:p-6">
+                  <h3 className="text-xl sm:text-2xl font-bold text-brand-black mb-2 sm:mb-3">{product.name}</h3>
+                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{product.description}</p>
                 </CardContent>
               </Card>
             ))}
