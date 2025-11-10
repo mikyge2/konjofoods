@@ -7,10 +7,20 @@ export const Products = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-brand-red to-brand-dark-red text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">Our Products</h1>
-          <p className="text-xl text-white/95 drop-shadow-md">
+      <section className="relative py-24 md:py-32 bg-gradient-to-br from-brand-red via-brand-dark-red to-brand-red text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-brand-gold rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <span className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-6">
+            <span className="text-white font-semibold text-sm tracking-wide">OUR COLLECTION</span>
+          </span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            Our <span className="text-brand-gold">Products</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 font-light max-w-2xl mx-auto">
             Premium Ethiopian spices crafted with tradition and care
           </p>
         </div>
