@@ -9,28 +9,28 @@ export const products = [
     id: 1,
     name: 'Berbere',
     description: 'A complex and aromatic blend of spices that forms the heart of Ethiopian cuisine. Rich, warm, and slightly spicy.',
-    image: 'https://images.unsplash.com/photo-1577563717655-919fc57789b4',
+    image: 'https://images.unsplash.com/photo-1635946680540-c097bf04a673',
     featured: true
   },
   {
     id: 2,
     name: 'Shiro',
     description: 'Finely ground chickpea flour mixed with spices. The base for Ethiopia\'s beloved shiro wat stew.',
-    image: 'https://images.unsplash.com/photo-1532590766017-8572c43b007c',
+    image: 'https://images.unsplash.com/photo-1594394489669-7846bc8ae5c4',
     featured: true
   },
   {
     id: 3,
     name: 'Chili Powder (Mitmita)',
     description: 'A fiery spice blend with a distinctive kick. Perfect for adding bold flavor to traditional dishes and meat preparations.',
-    image: 'https://images.unsplash.com/photo-1650559347569-09a6bbed5f28',
+    image: 'https://images.unsplash.com/photo-1741010812421-2b5bff9f95fc',
     featured: true
   },
   {
     id: 4,
     name: 'Powder Roasted Barley (Beso)',
     description: 'Traditional roasted barley powder, a nutritious and flavorful ingredient used in Ethiopian beverages and dishes.',
-    image: 'https://images.unsplash.com/photo-1704650312022-ed1a76dbed1b',
+    image: 'https://images.pexels.com/photos/531446/pexels-photo-531446.jpeg',
     featured: true
   },
   {
@@ -44,14 +44,14 @@ export const products = [
     id: 6,
     name: 'Bula',
     description: 'A traditional Ethiopian flour blend made from roasted grains, rich in nutrients and authentic flavor.',
-    image: 'https://images.unsplash.com/photo-1627735483792-233bf632619b',
+    image: 'https://images.unsplash.com/photo-1580116270858-8a0d62b15426',
     featured: true
   },
   {
     id: 7,
     name: 'Powder Emmer Wheat',
     description: 'Ancient grain flour with a nutty flavor and exceptional nutritional value, ideal for traditional Ethiopian baking.',
-    image: 'https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f',
+    image: 'https://images.pexels.com/photos/5480037/pexels-photo-5480037.jpeg',
     featured: true
   }
 ];
