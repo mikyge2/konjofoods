@@ -27,28 +27,34 @@ export const Products = () => {
       </section>
 
       {/* Products Grid */}
-      <section className="py-12 sm:py-16 md:py-20 bg-cream-bg">
+      <section className="py-16 sm:py-20 md:py-28 bg-gradient-to-b from-white to-cream-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-            {products.map((product) => (
-              <Card key={product.id} className="border border-gray-200 shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white">
-                <div className="h-60 sm:h-72 overflow-hidden relative bg-gray-100">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+            {products.map((product, index) => (
+              <Card key={product.id} 
+                className="border-none shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 bg-white rounded-3xl"
+                style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="h-72 sm:h-80 overflow-hidden relative bg-gradient-to-br from-gray-50 to-gray-100">
                   <img
                     src={product.image}
                     alt={product.name}
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   {product.featured && (
-                    <Badge className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-brand-gold text-brand-black border-none px-3 py-1.5 sm:px-4 sm:py-2 shadow-lg text-xs sm:text-sm">
-                      <Sparkles size={14} className="mr-1" />
+                    <Badge className="absolute top-4 right-4 bg-brand-gold/95 backdrop-blur-sm text-brand-black border-none px-4 py-2 shadow-lg font-semibold rounded-full">
+                      <Sparkles size={16} className="mr-1" />
                       Featured
                     </Badge>
                   )}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                    <p className="text-white text-sm font-light">Premium Quality • Authentic Taste</p>
+                  </div>
                 </div>
-                <CardContent className="p-5 sm:p-6">
-                  <h3 className="text-xl sm:text-2xl font-bold text-brand-black mb-2 sm:mb-3">{product.name}</h3>
-                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{product.description}</p>
+                <CardContent className="p-6 sm:p-8">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-brand-black mb-3 group-hover:text-brand-red transition-colors">{product.name}</h3>
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{product.description}</p>
                 </CardContent>
               </Card>
             ))}
