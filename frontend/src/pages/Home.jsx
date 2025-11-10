@@ -10,8 +10,8 @@ export const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image with Dark Overlay for Readability */}
+      <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image with Enhanced Overlay */}
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -20,34 +20,49 @@ export const Home = () => {
             backgroundPosition: 'center'
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-black/90 via-brand-black/75 to-brand-black/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-black/95 via-brand-black/80 to-brand-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-black/60 via-transparent to-transparent"></div>
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center md:text-left">
-          <div className="max-w-3xl mx-auto md:mx-0">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 animate-fade-in drop-shadow-2xl">
-              Konjo Foods
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 text-center">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="inline-block px-6 py-2 bg-brand-gold/20 backdrop-blur-sm rounded-full border border-brand-gold/30 mb-6">
+              <span className="text-brand-gold font-semibold text-sm tracking-wide uppercase">Premium Ethiopian Spices</span>
+            </div>
+            
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fade-in leading-tight">
+              Konjo <span className="text-brand-gold">Foods</span>
             </h1>
-            <p className="text-xl sm:text-2xl md:text-3xl text-brand-gold mb-6 md:mb-8 font-semibold drop-shadow-lg">
+            
+            <p className="text-2xl sm:text-3xl md:text-4xl text-white/90 mb-8 font-light leading-relaxed max-w-3xl mx-auto">
               Authentic Ethiopian Spices from Heart to Table
             </p>
-            <p className="text-base sm:text-lg md:text-xl text-white/95 mb-8 md:mb-10 leading-relaxed drop-shadow-lg max-w-2xl">
-              Experience the rich heritage of Ethiopian cuisine with our carefully sourced, traditional spice blends.
+            
+            <p className="text-lg sm:text-xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto font-light">
+              Experience the rich heritage of Ethiopian cuisine with our carefully sourced, traditional spice blends crafted for authentic flavor.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/products" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full sm:w-auto bg-brand-red hover:bg-brand-dark-red text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold group shadow-xl hover:shadow-2xl transition-all">
+                <Button size="lg" className="w-full sm:w-auto bg-brand-red hover:bg-brand-dark-red text-white px-10 py-7 text-lg font-semibold group shadow-2xl hover:shadow-brand-red/50 transition-all rounded-full">
                   Explore Our Spices
-                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                  <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" size={22} />
                 </Button>
               </Link>
               <Link to="/about" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-brand-black px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white/80 text-white hover:bg-white hover:text-brand-black px-10 py-7 text-lg font-semibold shadow-xl backdrop-blur-sm transition-all rounded-full">
                   Our Story
                 </Button>
               </Link>
             </div>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
+            <div className="w-1.5 h-3 bg-white/50 rounded-full"></div>
           </div>
         </div>
       </section>
