@@ -178,19 +178,39 @@ export const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-brand-red to-brand-dark-red text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 drop-shadow-lg px-4">
-            Ready to Experience Authentic Ethiopian Flavors?
+      <section className="relative py-20 sm:py-24 md:py-32 bg-gradient-to-br from-brand-red via-brand-dark-red to-brand-red overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-gold rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 text-center">
+          <div className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-8">
+            <span className="text-white font-semibold text-sm tracking-wide">START YOUR JOURNEY</span>
+          </div>
+          
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 text-white leading-tight px-4">
+            Ready to Experience Authentic <br className="hidden sm:block" />
+            <span className="text-brand-gold">Ethiopian Flavors?</span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/95 drop-shadow-md px-4 max-w-2xl mx-auto">
-            Get in touch with us to learn more about our products and sourcing practices.
+          
+          <p className="text-lg sm:text-xl md:text-2xl mb-10 sm:mb-12 text-white/90 px-4 max-w-3xl mx-auto font-light leading-relaxed">
+            Get in touch with us to learn more about our products and sourcing practices. Let's bring authentic Ethiopian flavors to your kitchen.
           </p>
-          <Link to="/contact" className="inline-block w-full sm:w-auto px-4">
-            <Button size="lg" className="w-full sm:w-auto bg-white text-brand-red hover:bg-cream-bg hover:text-brand-black px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all">
-              Contact Us Today
-            </Button>
-          </Link>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to="/contact" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto bg-white text-brand-red hover:bg-cream-bg hover:scale-105 px-10 py-7 text-lg font-semibold shadow-2xl transition-all rounded-full">
+                Contact Us Today
+              </Button>
+            </Link>
+            <Link to="/products" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-brand-red px-10 py-7 text-lg font-semibold backdrop-blur-sm transition-all rounded-full">
+                View Products
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
